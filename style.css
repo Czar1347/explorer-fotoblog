@@ -12,3 +12,13 @@
 body{
     font-size: 1.6rem;
 }
+
+#app > *{
+    border: 1px solid red;
+}
+
+#app{
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
