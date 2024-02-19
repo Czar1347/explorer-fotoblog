@@ -44,6 +44,10 @@ body {
     margin: 0 auto;
 }
 
+.logo{
+    filter: blur(10px);
+}
+
 header,
 nav,
 nav ul {
@@ -143,6 +147,12 @@ main h1{
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
+
+    filter: grayscale(1);
+}
+
+.item img:hover{
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
 }
 
 .details{
