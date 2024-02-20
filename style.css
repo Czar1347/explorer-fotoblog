@@ -44,10 +44,6 @@ body {
     margin: 0 auto;
 }
 
-.logo{
-    filter: blur(10px);
-}
-
 header,
 nav,
 nav ul {
@@ -95,9 +91,6 @@ ul li.active {
     font-weight: 600;
 
     opacity: 0.56;
-
-
-
 }
 
 .input-wrapper input::placeholder {
@@ -148,15 +141,11 @@ main h1{
     aspect-ratio: 16/9;
     object-fit: cover;
 
-    transition-property: transform, filter;
-    transition-duration: 1s;
-    /* transition-delay: 1s; */
 }
-
 .item img:hover{
     filter: hue-rotate(7deg) contrast(101%) saturate(200%);
-    transform: scale(1.1) rotate(-2deg);
 }
+
 
 .details{
 
