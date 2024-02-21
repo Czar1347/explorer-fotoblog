@@ -51,14 +51,17 @@ nav ul {
     align-items: center;
     gap: 7.2rem;
 }
-nav .logo{
+
+nav .logo {
     transition-property: filter;
     transition-duration: 5ms;
 
 }
-nav .logo:active{
+
+nav .logo:active {
     filter: blur(1px);
 }
+
 nav ul {
     list-style: none;
 
@@ -152,7 +155,7 @@ main h1 {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
-/* 
+    /* 
     transition-property: all;
     transition-duration: 1s;
     transition-delay: 0ms;
@@ -201,4 +204,39 @@ footer p {
     text-align: center;
     padding: 1.6rem;
     font-weight: 600;
+}
+
+/* Animações */
+
+header {
+    --startY: -100%;
+    animation: move 1.4s;
+}
+
+footer {
+    --startY: 100%;
+    animation: move 1.4s;
+
+}
+
+@keyframes move {
+    from {
+        transform: translateY(var(--startY));
+    }
+
+}
+
+.item {
+    --delay: .2s;
+    animation: appear .4s var(--delay) backwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(1.2);
+    }
 }
